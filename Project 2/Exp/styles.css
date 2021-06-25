@@ -1,0 +1,397 @@
+@charset "utf-8";
+@import url('href="https://fontlibrary.org//face/glacial-indifference');
+
+* {
+	/*
+	border: 1px solid red;
+	*/
+	scroll-behavior: smooth;
+}
+
+/* ----- Navbar -----*/
+
+.nav_links li, a {
+	font-family: "Glacial Indifference", sans-serif;
+	font-size: 25px;
+	color: #B0B2B5;
+	text-decoration: none;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+	padding: 10px 7%;
+	padding-top: 50px;
+	background-color: #333646;
+}
+
+.logo {
+	cursor: cell;
+	font-family: "Glacial Indifference", sans-serif;
+	font-size: 30px;
+	color: #FFAF22;
+}
+
+.nav_links {
+	list-style: none;
+	padding: 5px;
+}
+
+.nav_links li {
+	display: inline-block;
+	padding: 0px 50px;
+}
+
+.nav_links li a {
+	transition: all 0.3s ease 0s;
+}
+
+.nav_links li a::after {
+	transition: all 0.3s ease 0s;
+}
+
+.nav_links a::after {
+	content: '';
+	background-color: #FFD322;
+	display: block;
+	height: 1px;
+	width: 0%;
+}
+
+.nav_links li a:hover {
+	color: #E9EDF4;
+}
+
+.nav_links li a:hover:after {
+	content: '';
+	background-color: #FFD322;
+	display: block;
+	height: 1px;
+	width: 100%;
+}
+
+/* ----- BODY ---- */
+
+.container-fluid {
+	background-image: url("../Pictures/WORK-11.png");
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: #333646;
+	font-family: "Glacial Indifference", sans-serif;
+	font-size: 20px;
+	color: #B0B2B5;
+	line-height: normal;
+}
+
+.row {
+	align-items: center;
+	justify-content: center;
+}
+
+h1{
+	color: #E9EDF4;
+	font-size: 45px;
+}
+
+/* ----- HEADER -----*/
+
+.home {
+	background-color: #333646;
+	padding: 10px;
+}
+
+.home h2 a {
+	text-decoration: none;
+	color: #FFAF22;
+	font-size: 30px;
+}
+
+.home h2 a::after {
+	content: '';
+	background-color: #FFD322;
+	display: block;
+	height: 1px;
+	width: 0%;
+}
+
+.home h2 a:hover {
+	color: #FFD322;
+}
+
+.home h2 a:hover:after {
+	content: '';
+	background-color: #FFD322;
+	display: block;
+	height: 1px;
+	width: 130px;
+	transition: all 0.3s ease 0s;
+}
+
+.home h2 a {
+	transition: all 0.3s ease 0s;
+}
+
+.imglogo {
+	float: right;
+	width: 75%;
+	padding: 40px;
+	display: block;
+	margin: 0px auto;
+}
+
+
+/* ----- WORK -----*/
+
+.work {
+	background-color: #242734;
+	padding: 5% 5%;
+}
+
+.acol {
+	padding: 100px;
+}
+
+.card__title {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 700;
+	font-size: 40px;
+	color: #B0B2B5;
+	margin: 10px 0 0 0;
+	transition: all 0.3s ease;
+}
+
+.card__title:hover {
+	color: #E9EDF4;
+}
+
+.card {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	min-height: 150px;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 20px;
+	margin: 20px;
+	transition: all 0.3s ease;
+}
+
+.card:hover {
+	cursor: cell;
+	box-shadow: 0px 30px 10px -8px rgba(0,0,0,0.1);
+	transform: scale(1.10);
+}
+
+.card:nth-child(1) {
+	background-image: linear-gradient(
+	to bottom,
+		rgba(41, 179, 177,0.1) 0%,
+		rgba(41, 179, 177,0.2) 50%,
+		rgba(41, 179, 177,0.4) 100%),url("../Pictures/Fine Art Prints-10.png");
+}
+
+.card:nth-child(2) {
+	background-image: linear-gradient(
+	to bottom,
+		rgba(41, 179, 177,0.1) 0%,
+		rgba(41, 179, 177,0.2) 50%,
+		rgba(41, 179, 177,0.4) 100%),url("../Pictures/Digital Prints-10.png");
+}
+
+.card:nth-child(3) {
+	background-image: linear-gradient(
+	to bottom,
+		rgba(41, 179, 177,0.1) 0%,
+		rgba(41, 179, 177,0.2) 50%,
+		rgba(41, 179, 177,0.4) 100%), url("../Pictures/Base Prints-10.png");
+}
+
+/* ----- MORE -----*/
+
+.more {
+	padding: 20px;
+}
+
+.feed {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-auto-rows: 350px;
+	grid-gap: 20px;
+	margin: 100px 100px;
+}
+
+.card__category {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 700;
+	font-size: 35px;
+	line-height: 48px;
+	color: #B0B2B5;
+	margin: 250px 0 0;
+	transition: all 0.3s ease;
+}
+
+.card__category:hover {
+	color: #E9EDF4;
+}
+
+.morecard {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	padding: 20px;
+	transition: all 0.3s ease;
+	margin: 30px;
+}
+
+.morecard:hover {
+	cursor: cell;
+	box-shadow: 0px 30px 18px -8px rgba(0,0,0,0.1);
+	transform: scale(1.02);
+}
+
+.wantmore {
+	font-family: "Glacial Indifference", sans-serif;
+	font-size: 35px;
+	line-height: 42px;
+}
+
+.wantmore h1 {
+	font-size: 50px;
+}
+
+.morecard:nth-child(1):hover{
+	cursor: crosshair;
+	box-shadow: none;
+	transform: none;
+}
+
+.morecard:nth-child(2) {
+	background-image: linear-gradient(
+		to bottom,
+		rgba(255, 175, 34,0.1)0%,
+		rgba(255, 175, 34,0.2)50%,
+		rgba(255, 175, 34,0.3)100%), url("../Pictures/Photog-11.png");
+}
+
+.morecard:nth-child(3) {
+	background-image: linear-gradient(
+		to bottom,
+		rgba(41, 179, 177,0.1)0%,
+		rgba(41, 179, 177,0.2)50%,
+		rgba(41, 179, 177,0.3)100%), url("../Pictures/Photog-12.png");
+}
+.morecard:nth-child(4) {
+	background-image: linear-gradient(
+		to bottom,
+		rgba(255, 175, 34,0.1)0%,
+		rgba(255, 175, 34,0.2)50%,
+		rgba(255, 175, 34,0.3)100%), url("../Pictures/Photog-13.png");
+}
+.morecard:nth-child(5) {
+	background-image: linear-gradient(
+		to bottom,
+		rgba(255, 175, 34,0.1)0%,
+		rgba(255, 175, 34,0.2)50%,
+		rgba(255, 175, 34,0.3)100%), url("../Pictures/Photog-14.png");
+}
+
+.morecard:nth-child(6) {
+	background-image: linear-gradient(
+		to bottom,
+		rgba(41, 179, 177,0.1)0%,
+		rgba(41, 179, 177,0.2)50%,
+		rgba(41, 179, 177,0.3)100%), url("../Pictures/Extra-11.png");
+}
+
+.morecard:nth-child(1) {
+	grid-row-start: span 2;
+}
+
+.morecard:nth-child(2),:nth-child(3),:nth-child(4),:nth-child(5),:nth-child(6) {
+	grid-row-start: span 2;
+}
+
+@media screen and (max-width: 1200px) {
+	.morecard:nth-child(n) {
+		grid-column-start: span 2;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.morecard:nth-child(n) {
+		grid-column-start: span 0;
+	}
+}
+
+/* ----- ABOUT -----*/
+
+.about {
+	background-color: #242734;
+	padding: 20px;
+}
+
+.bcol {
+	text-align: end;
+	padding: 20px;
+}
+
+.imgme {
+	width: 50%;
+	border-radius: 5px;
+}
+
+/* ----- CONTACT -----*/
+
+.contact {
+	background-color: #333646;
+}
+
+.ccol {
+	padding: 50px;
+	padding-right: 10px;
+	text-align: end;
+}
+
+.dcol {
+	padding: 50px;
+	text-align: left;
+	margin: 0 0 10px;
+}
+
+.btn {
+	background-color: rgba(0,136,169,1);
+	border: none;
+	border-radius: 50px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	color: rgba(233, 237, 244,1);
+}
+
+.btn:hover {
+	color: rgba(233, 237, 244,0.8);
+	background-color: rgba(0,136,169,0.8);
+}
+
+.imgsm {
+	cursor: pointer;
+	width: 40px;
+}
+
+@media screen and (max-width: 1200px) {
+	.imglogo{
+		float: left;
+	}
+	
+	.bcol,.ccol {
+		text-align: left;
+	}
+}
